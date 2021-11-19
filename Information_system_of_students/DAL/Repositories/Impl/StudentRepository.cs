@@ -12,7 +12,7 @@ namespace Information_system_of_students.DAL.Repositories.Impl
     public class StudentRepository
         : BaseRepository<Student>, IStudentRepository
     {
-        internal StreetRepository(GroupContext context)
+        internal StudentRepository(GroupContext context)
             : base(context)
         {
         }

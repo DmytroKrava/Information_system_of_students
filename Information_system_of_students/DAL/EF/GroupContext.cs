@@ -11,7 +11,6 @@ namespace Information_system_of_students.DAL.EF
     {
         public DbSet<Group> Ciphres { get; set; }
         public DbSet<Student> Surnames { get; set; }
-​
         public GroupContext(DbContextOptions options)
             : base(options)
         {

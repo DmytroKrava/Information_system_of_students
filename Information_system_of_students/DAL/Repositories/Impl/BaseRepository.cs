@@ -15,7 +15,6 @@ namespace Information_system_of_students.DAL.Repositories.Impl
     {
         private readonly DbSet<T> _set;
         private readonly DbContext _context;
-​
         public BaseRepository(DbContext context)
         {
             _context = context;
@@ -26,7 +25,6 @@ namespace Information_system_of_students.DAL.Repositories.Impl
         {
             _set.Add(item);
         }
-​
         IEnumerable<T> IRepository<T>.Find(
             Func<T, bool> predicate,
             int pageNumber = 0,
@@ -38,7 +36,6 @@ namespace Information_system_of_students.DAL.Repositories.Impl
                     .Take(pageNumber)
                     .ToList();
         }
-​
         T IRepository<T>.Get(int id)
         {
             return _set.Find(id);

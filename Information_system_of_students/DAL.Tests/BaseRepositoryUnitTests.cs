@@ -2,18 +2,19 @@
 using Xunit;
 using Information_system_of_students.DAL.Repositories.Impl;
 using Information_system_of_students.DAL.EF;
-using Microsoft.EntityFrameworkCore;
+using Information_system_of_students.EntityFrameworkCore;
 using Information_system_of_students.DAL.Entities;
 using Information_system_of_students.DAL.Repositories.Interfaces;
 using System.Linq;
+using System.Text;
 using Moq;
 
 namespace DAL.Tests
 {
-    class TestStreetRepository
-        : BaseRepository<Street>
+    class TestStudentRepository
+        : BaseRepository<Student>
     {
-        public TestStreetRepository(DbContext context)
+        public TestStudentRepository(DbContext context)
             : base(context)
         {
         }
