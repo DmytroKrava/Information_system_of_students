@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D9kuqcpBOYfUTG5fjj3a6sasVQNhd/AFNLuxh+h+2Z+SL3zkXr0wbjagxnsLZeJoJbio56Mhm0DdqjfAIgmo9w==",
+  "dgSpecHash": "AT5hQNkRzOeoC5nq04TOPgN3p+WXh2VGS0UGpCNhTAcjOQkerLyZcxtBY3pSa/CvQ2itkq2klMaXNLdTAUzpnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dkrav\\OneDrive\\Документы\\GitHub\\Information_system_of_students\\Information_system_of_students\\DAL.Tests\\DAL.Tests\\DAL.Tests.csproj",
+  "projectFilePath": "C:\\Users\\dkrav\\OneDrive\\Документы\\GitHub\\Information_system_of_students\\Information_system_of_students\\DAL.Tests\\DAL.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dkrav\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\dkrav\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

@@ -1,4 +1,8 @@
-﻿namespace Information_system_of_students.DAL.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Information_system_of_students.DAL.Entities
 {
     public class Student
     {

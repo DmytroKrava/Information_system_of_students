@@ -1,12 +1,17 @@
-﻿namespace Information_system_of_students.DAL.Repositories.Interfaces
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Information_system_of_students.DAL.Repositories.Interfaces
 {
     public interface IRepository<T> where T : class
     {
         IEnumerable<T> GetAll();
         T Get(int id);
-        IEnumerable<T> Find(Func<T, Boolean> predicate);
+        IEnumerable<T> Find(Func<T, Boolean> predicate, int pageNumber = 0, int pageSize = 10);
         void Create(T item);
         void Update(T item);
         void Delete(int id);
     }
 }
+
