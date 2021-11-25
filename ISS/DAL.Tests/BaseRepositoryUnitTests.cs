@@ -13,7 +13,7 @@ namespace DAL.Tests
     class TestStreetRepository
         : BaseRepository<Street>
     {
-        public TestStreetRepository(DbContext context) 
+        public TestStreetRepository(DbContext context)
             : base(context)
         {
         }
@@ -31,7 +31,7 @@ namespace DAL.Tests
             var mockContext = new Mock<OSBBContext>(opt);
             var mockDbSet = new Mock<DbSet<Street>>();
             mockContext
-                .Setup(context => 
+                .Setup(context =>
                     context.Set<Street>(
                         ))
                 .Returns(mockDbSet.Object);
@@ -67,7 +67,7 @@ namespace DAL.Tests
             //IStreetRepository repository = uow.Streets;
             var repository = new TestStreetRepository(mockContext.Object);
 
-            Street expectedStreet = new Street() { StreetId = 1};
+            Street expectedStreet = new Street() { StreetId = 1 };
             mockDbSet.Setup(mock => mock.Find(expectedStreet.StreetId)).Returns(expectedStreet);
 
             //Act
@@ -114,6 +114,5 @@ namespace DAL.Tests
             Assert.Equal(expectedStreet, actualStreet);
         }
 
-      
     }
 }
