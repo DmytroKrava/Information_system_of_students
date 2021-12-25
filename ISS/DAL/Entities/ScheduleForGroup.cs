@@ -9,5 +9,6 @@ namespace Catalog.DAL.Entities
         public int ScheduleId { get; set; }
         public string Group { get; set; }
         public string Description { get; set; }
+        public int GroupID { get; set; }
     }
 }

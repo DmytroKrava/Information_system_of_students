@@ -11,20 +11,20 @@ namespace Catalog.DAL.EF
         : IUnitOfWork
     {
         private ScheduleContext db;
-        private StudentRepository studentRepository;
+        private GroupRepository groupRepository;
         private ScheduleForGroupRepository scheduleForGroupRepository;
 
         public EFUnitOfWork(ScheduleContext context)
         {
             db = context;
         }
-        public IStudentRepository Students
+        public IGroupRepository Groups
         {
             get
             {
-                if (studentRepository == null)
-                    studentRepository = new StudentRepository(db);
-                return studentRepository;
+                if (groupRepository == null)
+                    groupRepository = new GroupRepository(db);
+                return groupRepository;
             }
         }
 

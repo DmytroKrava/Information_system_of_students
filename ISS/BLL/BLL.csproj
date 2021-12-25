@@ -5,7 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CCL\CCL.csproj" />
+    <ProjectReference Include="..\DAL.Test\DAL.Tests.csproj" />
     <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\ISS\ISS.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
   </ItemGroup>
 
 </Project>

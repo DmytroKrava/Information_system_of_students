@@ -9,7 +9,7 @@ namespace Catalog.DAL.UnitOfWork
     public interface IUnitOfWork : IDisposable
     {
         IScheduleForGroupRepository Schedules { get; }
-        IStudentRepository Students { get; }
+        IGroupRepository Groups { get; }
         void Save();
     }
 }

@@ -9,7 +9,7 @@ namespace Catalog.DAL.EF
     public class ScheduleContext
         : DbContext
     {
-        public DbSet<Student> Students { get; set; }
+        public DbSet<Group> Students { get; set; }
         public DbSet<ScheduleForGroup> Schedules { get; set; }
 
         public ScheduleContext(DbContextOptions options)

@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Security\Identity\" />
+    <ProjectReference Include="..\DAL.Test\DAL.Tests.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\ISS\ISS.csproj" />
   </ItemGroup>
 
 </Project>
